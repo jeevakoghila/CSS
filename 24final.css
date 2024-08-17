@@ -48,7 +48,7 @@ nav ul{
 }
 nav a{
   display: block;
-  padding: 14px 68px;
+  padding: 14px 0;
   background-color: var(--white);
   color: var(--black);
 }
