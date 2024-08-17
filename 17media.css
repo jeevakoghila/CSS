@@ -1,0 +1,111 @@
+/*bootstrapbreakpoints.com*/
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightblue;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 1em;
+}
+
+footer {
+  background-color: lightgray;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  header {
+      background-color: lightcoral;
+  }
+
+  main {
+      background-color: lightyellow;
+  }
+}
+
+/* Medium devices (tablets, 600px and up) */
+@media (min-width: 601px) and (max-width: 992px) {
+  header {
+      background-color: lightgreen;
+  }
+
+  main {
+      background-color: lightpink;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 993px) {
+  header {
+      background-color: lightblue;
+  }
+
+  main {
+      background-color: lightgray;
+  }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) {
+  header {
+      font-size: 1.5em;
+  }
+
+  main {
+      font-size: 1.2em;
+  }
+}
+
+/* Portrait orientation */
+@media (orientation: portrait) {
+  header {
+      font-size: 1em;
+  }
+
+  main {
+      font-size: 1em;
+  }
+}
+
+/* Aspect Ratio: 16:9 */
+@media (aspect-ratio: 16/9) {
+  header {
+      background-color: lightseagreen;
+  }
+
+  main {
+      background-color: lightgoldenrodyellow;
+  }
+}
+
+/* Aspect Ratio: 4:3 */
+@media (aspect-ratio: 4/3) {
+  header {
+      background-color: lightcoral;
+  }
+
+  main {
+      background-color: lightblue;
+  }
+}
+
+/* Aspect Ratio: 1:1 (Square) */
+@media (aspect-ratio: 1/1) {
+  header {
+      background-color: lightpink;
+  }
+
+  main {
+      background-color: lightgreen;
+      }
+}

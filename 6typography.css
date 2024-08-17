@@ -1,0 +1,138 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* Default font family */
+  line-height: 1.6; /* Increases line height */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333; /* Dark background color */
+  color: #000000; /* White text color */
+  text-align: center; /* Center aligns text */
+  padding: 1rem; /* Padding around header content */
+}
+
+/* Main section styles */
+main {
+  padding: 1rem; /* Padding around main content */
+}
+
+/* Section headings */
+h1, h2 {
+  margin: 0.5rem 0; /* Margin for headings */
+}
+
+h1 {
+  font-size: 2rem; /* Main heading size */
+}
+
+h2 {
+  font-size: 1.5rem; /* Subheading size */
+}
+
+/* Font Families */
+.sans-serif {
+  font-family: Arial, sans-serif; /* Sans-serif font */
+}
+
+.script {
+  font-family: 'Brush Script MT', cursive; /* Script font */
+}
+
+.monospace {
+  font-family: Courier, monospace; /* Monospace font */
+}
+
+/* Font Sizes */
+.small-text {
+  font-size: 0.75rem; /* Small font size */
+}
+
+.medium-text {
+  font-size: 1rem; /* Medium font size */
+}
+
+.large-text {
+  font-size: 1.5rem; /* Large font size */
+}
+
+/* Font Weights */
+.bold {
+  font-weight: bold; /* Bold text */
+}
+
+.light {
+  font-weight: 300; /* Light text */
+}
+
+/* Text Decorations */
+.underline {
+  text-decoration: underline; /* Underline text */
+}
+
+.strikethrough {
+  text-decoration: line-through; /* Strikethrough text */
+}
+
+/* Text Transformations */
+.uppercase {
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.capitalize {
+  text-transform: capitalize; /* Capitalize text */
+}
+
+/* Spacing and Alignment */
+.letter-spacing {
+  letter-spacing: 0.5rem; /* Letter spacing */
+}
+
+.line-height {
+  line-height: 4; /* Increased line height */
+}
+
+.word-spacing {
+  word-spacing: 0.5rem; /* Increased word spacing */
+}
+
+/* Text Alignment */
+.left-align {
+  text-align: left; /* Left-aligned text */
+}
+
+.center-align {
+  text-align: center; /* Center-aligned text */
+}
+
+.right-align {
+  text-align: right; /* Right-aligned text */
+}
+
+.justify-align {
+  text-align: justify; /* Justified text */
+}
+
+/* Typography Details */
+.x-height {
+  font-size: 2rem; /* Default size to demonstrate x-height */
+}
+
+.ascenders-descenders {
+  font-size: 2rem; /* Default size to show ascenders and descenders */
+}
+
+.ligature {
+  font-family: 'Times New Roman', serif; /* Using a serif font to show ligatures */
+  font-size: 2rem;
+  font-variant-ligatures: common-ligatures; /* Enabling ligatures */
+}
+
+/* Footer styles */
+footer {
+ /* Light grey background */
+  text-align: center; /* Center aligns text */
+  padding: 1rem; /* Padding around footer content */
+}

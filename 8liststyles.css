@@ -1,0 +1,49 @@
+body{
+  padding: 10%;
+  font-size: 1rem;
+}
+
+ol{
+  list-style-type: decimal;
+  /*list-style-type: lower-roman;
+  list-style-type: upper-roman;
+  list-style-type: lower-alpha;
+  list-style-type: upper-alpha;
+  list-style-type: disc;
+  list-style-type: circle;
+  list-style-type: square;*/
+}
+
+ul{
+  /*list-style-type: square;*/
+  text-align: center;
+  /*list-style-position: inside;
+  list-style-image: url(w3logo.png);*/
+  color: blue;
+  list-style: square inside;
+}
+
+ol li{
+  color: brown;
+}
+ol li:nth-child(3){
+  color: blueviolet;
+}
+ul li{
+  color: green;
+}
+ul li:nth-child(2){
+  color: rgb(255, 170, 0);
+}
+
+/* Pseudo elements */
+ul li::marker{
+  color: aqua;
+  font-size: 2rem;
+  content: "Subscribe >>";
+}
+
+ol li::marker{
+  color: rgb(0, 46, 46);
+  font-size: 2rem;
+}

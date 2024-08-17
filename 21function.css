@@ -1,0 +1,61 @@
+:root {
+  --main-color: rgb(6, 141, 144); /* Custom property */
+  --accent-color: hsl(143, 89%, 21%); /* Custom property */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--main-color);
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 10px;
+  width: clamp(300px, 80%, 600px); /* Responsive width */
+}
+
+.box {
+  --box-size: 150px;
+  width: var(--box-size); /* Custom property */
+  height: var(--box-size); /* Custom property */
+  background: url('girl_photo.jfif') no-repeat center center; /* Background image */
+  background-size: cover;
+  border: 5px solid var(--accent-color); /* Border color using custom property */
+  transform: rotate(45deg) translateX(20px) scale(1.2) skew(10deg, 5deg); /* Multiple transforms */
+  filter: brightness(0.8) contrast(1.2); /* Filter effects */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  color: #ffffff;
+}
+
+.text::before {
+  content: attr(data-tooltip); /* Using attr() function */
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-40%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.text:hover::before {
+  opacity: 1; /* Show tooltip on hover */
+}

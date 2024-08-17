@@ -1,0 +1,109 @@
+/**{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+.outer-container{
+  border: 3px dashed black;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+.inner-container{
+  border: 3px solid blue;
+  width: 40vw;
+  height: 50vh;
+  margin: 100px auto;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  color: white;
+  padding: 1rem;
+}
+.absolute{
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ /* z-index: 1;*/
+/* relative */
+/*
+.relative{
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 120px;
+}/* its parent */
+/*.fixed{
+  background-color: green;
+  position: fixed;
+  top: 100px;
+  left: 200px;
+}/* always on web page */
+/*.sticky{
+  background-color: black;
+  position: sticky;
+  top:100px;
+}/* while end */
+html{
+  scroll-behavior: smooth;
+}
+section{
+  height: 100vh;
+}
+.blue{
+  background-color: blue;
+  color: white;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.green{
+  background-color: green;
+  color: white;
+}
+
+header, footer{
+  text-align: center;
+  height: 80px;
+  padding: 1rem;
+}
+header{
+  position: sticky;
+  top: 0;
+  font-size: 3rem;
+}
+footer{
+  position: sticky;
+  bottom: 0;
+  font-size: 2rem;
+  background-color: black;
+  width: 100%;
+}
+.first{
+  font-size: inherit;
+  background-color: aqua;
+  color: blue;
+  position: fixed;
+  top:30%;
+  left: 0;
+  z-index: 1;
+}
+.sec{
+  font-size: inherit;
+  background-color: aqua;
+  color: blue;
+  position: fixed;
+  top:35%;
+  left: 0;
+  z-index: 1;
+}

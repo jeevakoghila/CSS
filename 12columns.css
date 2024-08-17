@@ -1,0 +1,119 @@
+/* External CSS (styles.css) */
+
+/* Container for the columns */
+.columns-container {
+  /* Set the number of columns */
+  column-count: 2; /* Creates 2 columns */
+  
+  /* Define the minimum width of columns */
+  column-width: 250px; /* Each column will be at least 250px wide */
+  
+  /* Add space between columns */
+  column-gap: 30px; /* 30px gap between columns */
+  
+  /* Add a border around the container */
+  border: 1px solid #ddd; /* Light gray border */
+  
+  /* Add padding inside the container */
+  padding: 20px; /* 20px padding inside the container */
+  
+  /* Add a background color to the container */
+  background-color: #f4f4f4; /* Very light gray background */
+  
+  /* Add a rule between columns */
+  column-rule: 3px dashed #bbb; /* 3px dashed line in light gray */
+  
+  /* Make an element span across all columns */
+ /* column-span: all;  Element spans across all columns */
+}
+
+/* Style for each column */
+.column {
+  /* Prevent breaking inside columns */
+  break-inside: avoid; /* Avoid breaking inside the column */
+  
+  /* Define text alignment */
+  text-align: justify; /* Justify text alignment */
+  
+  /* Add margin to paragraphs */
+  margin-bottom: 15px; /* 15px margin at the bottom of each paragraph */
+}
+
+/* Style for the paragraphs */
+.column p {
+  /* Add padding to paragraphs */
+  padding: 10px; /* 10px padding inside each paragraph */
+  
+  /* Set a background color for paragraphs */
+  background-color: #e8e8e8; /* Slightly darker gray background for paragraphs */
+  
+  /* Set text color */
+  color: #333; /* Dark gray text color */
+  
+  /* Set line height */
+  line-height: 1.8; /* 1.8 line height for readability */
+}/* External CSS (styles.css) */
+
+/* Container for the columns */
+.columns-container {
+    /* Set the number of columns */
+    column-count: 2; /* Creates 2 columns */
+    
+    /* Define the minimum width of columns */
+    column-width: 250px; /* Each column will be at least 250px wide */
+    
+    /* Add space between columns */
+    column-gap: 30px; /* 30px gap between columns */
+    
+    /* Add a border around the container */
+    border: 1px solid #ddd; /* Light gray border */
+    
+    /* Add padding inside the container */
+    padding: 20px; /* 20px padding inside the container */
+    
+    /* Add a background color to the container */
+    background-color: #f4f4f4; /* Very light gray background */
+    
+    /* Add a rule between columns */
+    column-rule: 3px dashed #bbb; /* 3px dashed line in light gray */
+    
+    /* Make an element span across all columns */
+    /*column-span: all;  Element spans across all columns */
+}
+
+/* Style for each column */
+.column {
+    /* Prevent breaking inside columns */
+    break-inside: avoid; /* Avoid breaking inside the column */
+    
+    /* Define text alignment */
+    text-align: justify; /* Justify text alignment */
+    
+    /* Add margin to paragraphs */
+    margin-bottom: 15px; /* 15px margin at the bottom of each paragraph */
+}
+
+/* Style for the paragraphs */
+.column p {
+    /* Add padding to paragraphs */
+    padding: 10px; /* 10px padding inside each paragraph */
+    
+    /* Set a background color for paragraphs */
+    background-color: #e8e8e8; /* Slightly darker gray background for paragraphs */
+    
+    /* Set text color */
+    color: #333; /* Dark gray text color */
+    
+    /* Set line height */
+    line-height: 1.8; /* 1.8 line height for readability */
+}
+.quote{
+  margin-top: 2rem;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+ /* column-span: all;*/
+}
+.nowrap{
+  white-space: nowrap;
+}

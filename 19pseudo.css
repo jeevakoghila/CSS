@@ -1,0 +1,153 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for header and navigation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+/* Pseudo-class :hover */
+nav a:hover {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+/* Pseudo-class :visited */
+nav a:visited {
+  color: #8a2be2;
+}
+
+/* Pseudo-class :active */
+nav a:active {
+  color: #ffa07a;
+}
+
+/* Styling for main content */
+main {
+  padding: 20px;
+}
+
+/* Pseudo-class :first-child */
+main section:first-child {
+  background-color: hsl(208, 82%, 49%);
+  padding: 10px;
+}
+
+/* Pseudo-class :last-child */
+main section:last-child {
+  background-color: #6c0404;
+  padding: 10px;
+}
+
+/* Pseudo-class :nth-child */
+main .service:nth-child(2n) {
+  background-color: #00aeae;
+  padding: 10px;
+}
+
+/* Pseudo-class :not() */
+main .service:not(:first-child) {
+  border: 1px solid #000000;
+  margin-top: 10px;
+}
+
+/* Pseudo-class :focus */
+nav a:focus {
+  outline: 2px solid #ff6347;
+}
+
+/* Pseudo-class :valid */
+input:valid {
+  border-color: green;
+}
+
+/* Pseudo-class :invalid */
+input:invalid {
+  border-color: red;
+}
+
+/* Pseudo-element ::before */
+h1::before {
+  content: "🌟 ";
+  color: #ffd700;
+}
+
+/* Pseudo-element ::after */
+h1::after {
+  content: " 🌟";
+  color: #ffd700;
+}
+
+/* Pseudo-element ::first-line */
+p::first-line {
+  font-weight: bold;
+}
+
+/* Pseudo-element ::first-letter */
+p::first-letter {
+  font-size: 2em;
+  color: #ff4500;
+}
+
+/* Pseudo-element ::placeholder */
+input::placeholder {
+  color: gray;
+}
+
+/* Pseudo-element ::selection */
+::selection {
+  background: yellow;
+  color: black;
+}
+
+/* Pseudo-element ::marker */
+li::marker {
+  color: red;
+  font-size: 1.2em;
+}
+
+/* Pseudo-element ::part() */
+::part(button) {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+}
+
+/* Pseudo-element ::slotted() */
+::slotted(p) {
+  color: green;
+}
+
+/* Pseudo-class :is() */
+:is(h1, h2, h3) {
+  color: blue;
+}
+
+/* Pseudo-class :where() */
+:where(header, footer) {
+  background-color: #333;
+  color: white;
+}
+
+/* Pseudo-class :has() */
+:has(.service) {
+  border: 2px solid #ddd;
+}

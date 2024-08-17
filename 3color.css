@@ -1,0 +1,113 @@
+/* Basic colors */
+#red {
+  background-color: red;
+  color: white;
+}
+
+#green {
+  background-color: green;
+  color: white;
+}
+
+#blue {
+  background-color: blue;
+  color: white;
+}
+
+/* Hex colors */
+#hex1 {
+  background-color: #FF5733;
+  color: white;
+}
+
+#hex2 {
+  background-color: #33FF57;
+  color: black;
+}
+
+#hex3 {
+  background-color: #5733FF;
+  color: white;
+}
+
+/* RGB colors */
+#rgb1 {
+  background-color: rgb(255, 87, 51);
+  color: white;
+}
+
+#rgb2 {
+  background-color: rgb(51, 255, 87);
+  color: black;
+}
+
+#rgb3 {
+  background-color: rgb(87, 51, 255);
+  color: white;
+}
+
+/* RGBA colors */
+#rgba1 {
+  background-color: rgba(255, 87, 51, 0.5);
+  color: white;
+}
+
+#rgba2 {
+  background-color: rgba(51, 255, 87, 0.7);
+  color: black;
+}
+
+#rgba3 {
+  background-color: rgba(87, 51, 255, 0.3);
+  color: white;
+}
+
+/* HSL colors */
+#hsl1 {
+  background-color: hsl(9, 100%, 60%);
+  color: white;
+}
+
+#hsl2 {
+  background-color: hsl(120, 100%, 60%);
+  color: black;
+}
+
+#hsl3 {
+  background-color: hsl(240, 100%, 60%);
+  color: white;
+}
+
+/* HSLA colors */
+#hsla1 {
+  background-color: hsla(9, 100%, 60%, 0.5);
+  color: white;
+}
+
+#hsla2 {
+  background-color: hsla(120, 100%, 60%, 0.7);
+  color: black;
+}
+
+#hsla3 {
+  background-color: hsla(240, 100%, 60%, 0.3);
+  color: white;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.color-section {
+  margin: 20px 0;
+}
+
+.color-box {
+  padding: 20px;
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}

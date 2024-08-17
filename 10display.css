@@ -1,0 +1,64 @@
+/* General styling for the boxes */
+.box {
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Block-level elements take up the full width available */
+.block {
+  border: 1px solid black;
+  display: block;
+  background-color: #3498db; /* Blue */
+}
+
+/* Inline elements do not start on a new line and only take up as much width as needed */
+.inline {
+  border: 1px solid black;
+  display: inline;
+  background-color: #e74c3c; /* Red */
+}
+
+/* Inline-block elements are similar to inline elements but can have width and height */
+.inline-block {
+  border: 1px solid black;
+  display: inline-block;
+  background-color: #2ecc71; /* Green */
+}
+
+/* Elements with display: none; are not visible and do not take up space */
+.none {
+  border: 1px solid black;
+  display: none;
+  background-color: #f39c12; /* Orange */
+}
+
+/* Flexbox layout is used to create flexible layouts */
+.flex {
+  border: 1px solid black;
+  display: flex;
+  background-color: #9b59b6; /* Purple */
+}
+
+/* Grid layout allows for complex grid-based designs */
+.grid {
+  border: 1px solid black;
+  display: grid;
+  background-color: #1abc9c; /* Teal */
+}
+
+/* Table display type is used for table-like layouts */
+.table {
+  border: 1px solid black;
+  display: table;
+  background-color: #34495e; /* Dark Gray */
+}
+
+/* List-item is used for items in a list, and is similar to block but with list styling */
+.list-item {
+  border: 1px solid black;
+  display: list-item;
+  background-color: #f1c40f; /* Yellow */
+}

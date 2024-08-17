@@ -1,0 +1,197 @@
+/* 1. Universal Selector */
+* {
+  box-sizing: border-box; /* Applies box-sizing to all elements */
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
+}
+
+/* 2. Type Selectors */
+body {
+  font-family: Arial, sans-serif; /* Sets font for the entire body */
+}
+
+/* 3. Class Selectors */
+.intro {
+  background-color: #f9f9f9; /* Sets background color for elements with class 'intro' */
+  padding: 20px; /* Adds padding inside elements with class 'intro' */
+}
+
+.highlight {
+  color: #ff6347; /* Sets text color for elements with class 'highlight' */
+}
+
+/* 4. ID Selectors */
+#welcome {
+  font-size: 1.5em; /* Sets font size for the element with ID 'welcome' */
+  color: #333; /* Sets text color for the element with ID 'welcome' */
+}
+
+/* 5. Attribute Selectors */
+/* Selects any <a> element with an href attribute */
+a[href] {
+  color: blue; /* Sets color for links with any href attribute */
+}
+
+/* Selects <a> element with a specific href value */
+a[href="https://example.com"] {
+  color: green; /* Sets color for the link with the exact href value */
+}
+
+/* Selects <a> element with href attribute starting with 'https://' */
+a[href^="https://"] {
+  font-weight: bold; /* Sets font weight for links with href starting with 'https://' */
+}
+
+/* Selects <a> element with href attribute ending with '.com' */
+a[href$=".com"] {
+  text-decoration: underline; /* Underlines links with href ending in '.com' */
+}
+
+/* Selects <a> element with href attribute containing 'example' */
+a[href*="example"] {
+  border-bottom: 1px dashed orange; /* Adds a dashed orange border below links with href containing 'example' */
+}
+
+/* 6. Pseudo-class Selectors */
+/* Applies styles when an <a> element is hovered over */
+a:hover {
+  color: red; /* Changes link color to red when hovered */
+}
+
+/* Applies styles when an input element is focused */
+input:focus {
+  border-color: blue; /* Changes border color to blue when input is focused */
+}
+
+/* Selects odd <li> elements within <ul> */
+ul li:nth-child(odd) {
+  background-color: #ac5858; /* Sets a background color for odd list items */
+}
+
+/* Selects the second <p> element within <section> */
+ul li:nth-of-type(2) {
+  font-weight: bold; /* Makes the second list item bold */
+}
+
+/* Selects the first child <h1> within <header> */
+header h1:first-child {
+  font-size: 2em; /* Sets font size for the first <h1> in <header> */
+}
+
+/* Selects the last <p> element within <footer> */
+footer p:last-child {
+  font-style: italic; /* Makes the last paragraph in <footer> italic */
+}
+
+/* Selects <p> elements that do not have the class 'description' */
+section p:not(.description) {
+  color: green; /* Changes text color to green for paragraphs without class 'description' */
+}
+
+/* Selects empty <p> elements (elements with no content) */
+p:empty {
+  display: none; /* Hides empty paragraphs */
+}
+
+/* Selects disabled <input> elements */
+input:disabled {
+  background-color: #e0e0e0; /* Sets background color for disabled inputs */
+}
+
+/* Selects enabled <input> elements */
+input:enabled {
+  background-color: #fff; /* Sets background color for enabled inputs */
+}
+
+/* 7. Pseudo-element Selectors */
+/* Inserts content before <h2> */
+h2::before {
+  content: "→ "; /* Adds a red arrow before <h2> content */
+  color: red; /* Sets color of the inserted content */
+}
+
+/* Inserts content after <footer> */
+footer::after {
+  content: " - Thank you for visiting!"; /* Adds a thank you note after <footer> content */
+  display: block; /* Ensures the content appears on a new line */
+}
+
+/* Styles the first line of <p> elements */
+p::first-line {
+  font-weight: bold; /* Makes the first line of paragraphs bold */
+}
+
+/* Styles the first letter of <p> elements */
+p::first-letter {
+  font-size: 2em; /* Enlarges the first letter of paragraphs */
+  color: navy; /* Sets color of the first letter to navy */
+}
+
+/* Styles the placeholder text in <input> elements */
+input::placeholder {
+  color: gray; /* Sets placeholder text color to gray */
+}
+
+/* 8. Group Selectors */
+/* Applies styles to <h1>, <h2>, and <h3> elements */
+h1, h2, h3 {
+  font-family: 'Courier New', Courier, monospace; /* Sets font family for headings */
+}
+
+/* 9. Combinators */
+/* Selects <h1> elements that are descendants of <header> */
+header h1 {
+  color: darkblue; /* Sets text color to dark blue for <h1> within <header> */
+}
+
+/* Selects <ul> elements that are direct children of <nav> */
+nav > ul {
+  list-style-type: none; /* Removes bullet points from list items */
+}
+
+/* Selects the <p> element immediately following <h2> */
+h2 + p {
+  margin-top: 10px; /* Adds top margin to <p> following <h2> */
+}
+
+/* Selects all <p> elements following an <h3> */
+h3 ~ p {
+  color: grey; /* Sets text color to grey for all <p> elements after <h3> */
+}
+
+/* 10. UI State Pseudo-classes */
+/* Selects <input> elements that are read-only */
+input:read-only {
+  background-color: #ffffff; /* Sets background color for read-only inputs */
+}
+
+/* Selects <input> elements that are valid (e.g., valid form input) */
+input:valid {
+  border-color: green; /* Sets border color to green for valid inputs */
+}
+
+/* Selects <input> elements that are invalid (e.g., invalid form input) */
+input:invalid {
+  border-color: red; /* Sets border color to red for invalid inputs */
+}
+
+/* Selects <input> elements that are required */
+input:required {
+  border: 2px solid orange; /* Adds an orange border for required inputs */
+}
+
+/* Selects <input> elements that are optional */
+input:optional {
+  border: 1px solid blue; /* Adds a blue border for optional inputs */
+}
+
+/* 11. Structural Pseudo-classes */
+/* Selects the last <p> element in <section> */
+section > p:nth-last-child(1) {
+  font-style: italic; /* Makes the last <p> in <section> italic */
+}
+
+/* Selects the last <p> element of its type in <section> */
+section p:nth-last-of-type(1) {
+  color: purple; /* Sets text color to purple for the last <p> of its type in <section> */
+}

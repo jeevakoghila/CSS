@@ -1,0 +1,233 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Figure Section */
+.figure-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.figure-image {
+  max-width: 100%;
+  height: auto;
+}
+
+figure figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* Background Image Section */
+.background-section {
+  height: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('girl_photo.jfif') no-repeat center center;
+  background-size: cover;
+}
+
+/* Text Image Section */
+.text-image-section {
+  padding: 2em;
+  background-image: url('girl_photo.jfif');
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.text-image-section p {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+}
+
+/* Linear Gradient Section */
+.gradient-section {
+  padding: 2em;
+  background: linear-gradient(45deg, #ff6f61, #6a1b9a);
+  color: white;
+  text-align: center;
+}
+
+.gradient-section p {
+  margin: 0;
+}
+
+/* Profile Section */
+.profile-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-section h2 {
+  margin-top: 1em;
+}
+
+/* Transparent Image Section */
+.transparent-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.transparent-image {
+  width: 200px;
+  height: auto;
+  opacity: 0.5; /* Slightly transparent */
+}
+
+.transparent-section h2 {
+  margin-bottom: 1em;
+}
+
+/* CSS Mask Section */
+.mask-section {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: url('girl_photo.jfif') no-repeat center center;
+  background-size: cover;
+  -webkit-mask-image: url('girl_photo.jfif'); /* For WebKit browsers */
+  mask-image: url('girl_photo.jfif');
+}
+
+.masked-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Border and Shadow Section */
+.border-shadow-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.border-shadow-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 5px solid #333; /* Border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Circular Image Section */
+.circular-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.circular-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover;
+}
+
+/* Hover Effect Section */
+.hover-effect-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.hover-effect-image {
+  width: 100%;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.hover-effect-image:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Text Overlay Section */
+.text-overlay-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.text-overlay-image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.text-overlay-image img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  text-align: center;
+}
+
+/* Aspect Ratio Section */
+.aspect-ratio-section {
+  padding: 2em;
+  text-align: center;
+}
+
+.aspect-ratio-image {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+
+.aspect-ratio-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

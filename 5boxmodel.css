@@ -1,0 +1,49 @@
+/* Reset default browser margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ff0000;
+  padding: 20px;
+}
+
+/* Styling for the .box class */
+.box {
+  /* Content area */
+  width: 300px; /* Width of the content area */
+  padding: 20px; /* Space between the content and the border */
+  border: 10px solid #000000; /* Border around the padding area */
+  margin: 20px; /* Space outside the border, creating distance from other elements */
+
+  /* Box Model Properties */
+  /* Content Area */
+  /* Padding: Space between the content and the border */
+  padding: 20px; /* 20px padding on all sides */
+
+  /* Border: Surrounds the padding */
+  border: 10px solid #00eaff; /* 10px solid border with color #333 */
+
+  /* Margin: Space outside the border */
+  margin: 20px; /* 20px margin on all sides */
+  
+  /* Background Color */
+  background-color: #002fff; /* Background color of the content area */
+  
+  /* Width and Height */
+  width: 300px; /* Width of the content area */
+  height: auto; /* Height adjusts based on the content */
+  
+  /* Box Shadow */
+  box-shadow: 5px 5px 5px 5px rgba(1, 255, 68, 0.799); /* Shadow around the box for depth effect */
+}
+
+/* Paragraph styling inside the box */
+.box p {
+  font-size: 16px;
+  color: #000000;
+}

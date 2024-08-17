@@ -1,0 +1,50 @@
+/* Flex container */
+.flex-container {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: row; /* Items are placed in a row (default) */
+  flex-wrap: wrap; /* Items wrap onto multiple lines */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items in the center of the cross axis */
+  align-content: space-around; /* Space around flex lines */
+  gap: 15px; /* Gap between items (note: 'gap' is a newer property and may not be supported in older browsers) */
+  height: 100vh; /* Full viewport height */
+  border: 2px solid #333; /* Border around the container */
+  padding: 20px; /* Padding inside the container */
+  background-color: #f0f0f0; /* Background color of the container */
+}
+
+/* Flex items */
+.flex-item {
+  flex: 1 1 150px; /* Grow, shrink, and basis values for flex items */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  padding: 20px; /* Padding inside items */
+  text-align: center; /* Centered text alignment */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Specific item styles */
+.item1 {
+  flex: 2 1 200px; /* Grow factor of 2, shrink factor of 1, basis of 200px */
+  align-self: flex-start; /* Align this item to the start of the cross axis */
+}
+
+.item2 {
+  flex: 1 1 150px; /* Grow factor of 1, shrink factor of 1, basis of 150px */
+  align-self: flex-end; /* Align this item to the end of the cross axis */
+}
+
+.item3 {
+  flex: 1 2 100px; /* Grow factor of 1, shrink factor of 2, basis of 100px */
+  align-self: center; /* Align this item in the center of the cross axis */
+}
+
+.item4 {
+  flex: 1 1 auto; /* Grow factor of 1, shrink factor of 1, basis of auto */
+  align-self: baseline; /* Align this item to the baseline of the cross axis */
+}
+
+.item5 {
+  flex: 1 1 0; /* Grow factor of 1, shrink factor of 1, basis of 0 */
+  align-self: stretch; /* Stretch this item to fill the cross axis */
+}

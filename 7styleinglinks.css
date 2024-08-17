@@ -1,0 +1,27 @@
+body{
+  padding: 10%;
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+  /*cursor: not-allowed;
+  cursor: alias;
+  cursor: help;
+  cursor: cell;*/
+  cursor: pointer;
+  color: rgb(1, 163, 82);
+}
+
+/* Pseudo Class 
+a:visited{
+  color: purple;
+}*/
+
+a:hover, a:focus{
+  color: rgba(1, 163, 82,0.5);
+}
+
+a:active{
+  color: brown;
+}
